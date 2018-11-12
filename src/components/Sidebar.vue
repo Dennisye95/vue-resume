@@ -10,6 +10,9 @@
     <SidebarSection v-for="section in sections" :title="section.title">
       <SidebarContent :items="section.items" />
     </SidebarSection>
+    <SidebarSection title="Education">
+      <Education :school="education.school" :degree="education.degree" :date="education.date" />
+    </SidebarSection>
   </div>
 </template>
 
@@ -19,6 +22,7 @@ import Contact from './Contact'
 import Proficiency from './Proficiency'
 import SidebarSection from './SidebarSection'
 import SidebarContent from './SidebarContent'
+import Education from './Education'
 import data from '../../data'
 
 export default {
@@ -28,7 +32,8 @@ export default {
     Contact,
     Proficiency,
     SidebarSection,
-    SidebarContent
+    SidebarContent,
+    Education
   },
   data: () => {
     return data.sidebar
@@ -43,6 +48,7 @@ export default {
 .sidebar-header {
   text-transform: uppercase;
   font-size: 2em;
+  font-weight: 500;
   padding: 0.1em 0.1em 0.1em 0;
   margin: 0.2em 0 0.2em 0;
   border-top: 1px solid white;

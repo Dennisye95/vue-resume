@@ -41,10 +41,10 @@ export default {
 }
 .company {
   font-size: 2em;
+  font-weight: 500;
 }
 .title {
   font-size: 1.2em;
-  font-style: italic;
 }
 .location {
   font-size: 1.2em;

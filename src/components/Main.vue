@@ -1,25 +1,26 @@
 <template>
   <div class="main">
-    <MainSection title="Work Experience">
+    <MainSection title="Experience">
       <Experience v-for="experience in experiences" v-bind="experience" />
     </MainSection>
-    <MainSection title="Education">
-      <Experience v-for="experience in education" v-bind="experience" />
+    <MainSection title="Projects">
+      <Project v-for="project in projects" v-bind="project" />
     </MainSection>
-
   </div>
 </template>
 
 <script>
 import MainSection from './MainSection'
 import Experience from './Experience'
+import Project from './Project'
 import data from '../../data'
 
 export default {
   name: 'Main',
   components: {
     MainSection,
-    Experience
+    Experience,
+    Project,
   },
   data: () => {
     return data.main
@@ -48,13 +49,13 @@ export default {
 .main {
   background: white;
   color: #104b79;
-  font-size: 11px;
+  font-size: 12px;
   display: table-cell;
   text-align: left;
   margin: 0 auto;
   padding: 2.5%;
-  width: 75%;
-  margin-left: 25%;
+  width: 70%;
+  margin-left: 30%;
   height: 100%;
   vertical-align: top;
 }

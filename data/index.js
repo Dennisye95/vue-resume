@@ -2,7 +2,7 @@ export default {
   main: {
     experiences: [{
       company: 'Evichat Inc.',
-      title: 'Full Stack Web Developer',
+      title: 'Full Stack Software Engineer',
       technologies: ['Ruby on Rails', 'Node.js', 'Electron', 'PostgreSQL', 'AWS'],
       date: {
         start: 'Jan 2018',
@@ -10,27 +10,26 @@ export default {
       },
       location: 'Toronto, Canada',
       achievements: [
-        'Actively implemented core features for an e-discovery tool that helps lawyers collect, consolidate, and present social media and messaging evidence',
-        'Assisted with the implementation and testing of <b>NLP</b> powered <b>context-aware</b> search feature, resulting in our first place finish at the 2018 AI Legal Challenge',
-        'Greatly improved data integrity and security, as well as enabled new features through major restructuring of the database schema using <b>Rails</b> migrations',
-        'Engineered a scalable solution for retrieving SMS/MMS data from iPhone backups, including support for older generation iPhones and backups as large as <b>40GB</b>',
-        'Built an admin panel with custom features, significantly improving development efficiency as well as client onboarding'
+        'Implemented core features for an e-discovery tool that helps lawyers collect, consolidate, and present social media and messaging evidence',
+        'Collected, prepared, and tested large datasets for the implementation of  the <b>NLP</b> powered <b>context-aware</b> search feature, resulting in our <b>first place</b> finish at the 2018 AI Legal Challenge',
+        'Engineered a scalable solution for extracting SMS/MMS data from iPhone backups, including support for older phones and backups as large as <b>40GB</b>',
+        'Restructed large parts of the database schema, greatly improving data integrity and security, as well as enabling new features',
+        'Built an admin panel with custom features, providing analytics on users and support for technical and non-technical team members',
       ],
     }, {
       company: 'LUQL.IO',
-      title: 'Co-Founder and Full Stack Developer',
+      title: 'Co-Founder, Full Stack Engineer',
       technologies: ['Django', 'React Native', 'PostgreSQL', 'GCP', 'Firebase', 'MobX'],
       date: {
-        start: 'Sep 2016',
+        start: 'Sept 2016',
         end: 'Dec 2017'
       },
       location: 'Waterloo, Canada',
       achievements: [
-        'Extensively engineered a market-ready product from scratch as a founding member of a startup that supports a platform for P2P tourism',
-        'Designed and built database schema for the entire domain of the application',
-        'Developed REST API and core endpoints using <b>Django</b> while following a <b>TDD</b> approach to reduce potential bugs and improve development efficiency',
-        'Spearheaded development of the mobile application using <b>React Native</b> and <b>MobX</b>',
-        'Migrated production data and refactored codebase to improve <b>performance</b> and better support <b>asynchronous</b> execution'
+        'Engineered a market-ready travel app that allows users to connect with local tour guides at their desired destinations',
+        'Designed and developed database schema, REST API, and core endpoints using <b>Django</b> while following a <b>TDD</b> approach',
+        'Built core libraries for <b>error handling</b> and <b>data validation</b>',
+        'Initiated development of mobile application using <b>React Native</b> and <b>MobX</b>',
       ],
     }, {
       company: 'Equitable Life of Canada',
@@ -42,46 +41,35 @@ export default {
       },
       location: 'Waterloo, Canada',
       achievements: [
-        'Developed analytical tools and systems as a core member of the Investment Quants team at a Canadian insurance company',
-        'Created and streamlined data pipelines for essential day to day operations',
-        'Built a tool using <b>VBA</b> that provides analytics on our security lending program, resulting in a decision to reallocate certain assets, significantly increasing profits',
-        'Designed and implemented a curve fitting model using <b>SQLAlchemy</b> and <b>Scipy</b> for constructing yield curves, a crucial component for pricing fixed income securities',
-        'Prototyped an interactive web interface for editing yield curves using <b>Flask</b>'
-      ],
-    }, {
-      company: 'Imagine Communications Corp.',
-      title: 'Software QA Analyst',
-      date: {
-        start: 'May 2016',
-        end: 'Aug 2016'
-      },
-      location: 'Toronto, Canada',
-      achievements: [
-        'Rigorously tested a line of products that supports nearly half of the world\'s audio and video channels and empowers the media and broadcasting industry',
-        'Automated functional and performance testing of API through <b>SoapUI</b>',
-        'Wrote scripts and unit tests using <b>Groovy</b> to streamline the testing process'
+        'Developed analytical tools, systems, and data pipelines that assisted with essential day to day operations at a Canadian insurance company',
+        'Overhauled and improved the yield curve model, a crucial component for pricing fixed income securities, using <b>SQLAlchemy</b> and <b>Scipy</b>',
+        'Designed, developed, and tested data pipeline and core processes for new bond fund, leading to one of the most successful fund launches',
+        'Built a data analytics tool using <b>Python</b> and <b>SQL</b> on the security lending program, resulting in the reallocation of assets and increased profits',
       ]
-    }
-  ],
-  education: [{
-      company: 'University of Waterloo',
-      title: 'Bachelor of Computing and Financial Management',
-      date: {
-        start: 'Sep 2013',
-        end: 'Current'
-      }
+    }],
+    projects: [{
+      title: 'Plannersist',
+      technologies: ['Django', 'PostgreSQL', 'React', 'Redux', 'Semantic UI', 'Recharts'],
+      description: 'Productivity tool for managing personal projects, tasks, and deadlines.',
+    }, {
+      title: 'Virtual Piano',
+      technologies: ['Paper.js', 'Paperscript', 'Howler.js'],
+      description: 'Interactive piano web app with animations and sounds.'
+    }, {
+      title: 'Pin Point',
+      technologies: ['HTML/CSS', 'Javascript', 'jQuery'],
+      description: 'Timing based browser game on a 2D grid with adjustable size and speed.'
     }]
   },
   sidebar: {
     identity: {
       name: 'Dennis Ye',
       roles: [
-        'Software Developer',
-        'Data Engineer'
+        'Software Engineer',
       ]
     },
     contacts: [{
-    name: 'Phone',
+      name: 'Phone',
       faClass: 'fa fa-phone',
       display: '647 669 0518',
       link: 'tel:+16476690518'
@@ -90,6 +78,11 @@ export default {
       faClass: 'fa fa-envelope',
       display: 'dennisye95@gmail.com',
       link: 'mailto:dennisye95@gmail.com'
+    }, {
+      name: 'Website',
+      faClass: 'fa fa-link',
+      display: 'www.dennisye.net',
+      link: 'www.dennisye.net'
     }, {
       name: 'LinkedIn',
       faClass: 'fa fa-linkedin',
@@ -114,27 +107,30 @@ export default {
       skill: 'Ruby',
       proficiency: 8
     }, {
+      skill: 'SQL',
+      proficiency: 8
+    }, {
+      skill: 'R',
+      proficiency: 8
+    }, {
+      skill: 'MATLAB',
+      proficiency: 7
+    }, {
       skill: 'C/C++',
       proficiency: 7
     }, {
       skill: 'Java',
       proficiency: 6
-    }, {
-      skill: 'MATLAB',
-      proficiency: 7
-    }, {
-      skill: 'R',
-      proficiency: 6
     }],
     sections: [{
       title: 'Frameworks',
       items: [
-        'Ruby on Rails',
         'Django',
-        'Express',
+        'Ruby on Rails',
         'React',
         'React Native',
         'Redux',
+        'Express',
         'MobX',
         'Vue.js',
         'Electron',
@@ -165,22 +161,21 @@ export default {
       title: 'Tools',
       items: [
         'AWS',
-        'GCP',
         'Firebase',
-        'Node.js',
+        'GCP',
         'Git',
-        'Vim',
+        'Heroku',
+        'Node.js',
         'Unix',
+        'Vim',
         'Webpack'
       ]
-    }, {
-      title: 'Passions',
-      items: [
-        'Music',
-        'Dance',
-        'Travel'
-      ]
-    }]
+    }],
+    education: {
+      school: 'University of Waterloo',
+      degree: 'Bachelor of Computing and Financial Management',
+      date: 'Sept 2013 - Dec 2018',
+    }
   }
 }
 
